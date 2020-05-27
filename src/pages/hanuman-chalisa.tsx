@@ -3,13 +3,13 @@ import React from "react"
 import { PageProps, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+
 
 import JSONData from "../content/hanumanChalisa.json"
 
 const SecondPage = (props: PageProps) => (
   <Layout>
-    <SEO title="Hanuman Chalisa" />
+    
     <h1>Hanuman Chalisa</h1>
 
 
