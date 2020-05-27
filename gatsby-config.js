@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/gatsby-bhajans",
   siteMetadata: {
     title: `Bhajan Project`,
     description: `A shared effort to explain and preserve our bhajans`,
