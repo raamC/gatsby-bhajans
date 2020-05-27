@@ -1,6 +1,8 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: red;
 
+@import "~bulma/bulma.sass";
+
 main {
   font: 100% $font-stack;
   color: $primary-color;
