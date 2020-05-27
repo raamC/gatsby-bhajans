@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(e,a,n){"use strict";n.r(a);var t=n("q1tI"),l=n.n(t),c=n("Wbzz"),u=n("Bl7J"),r=n("vrFN");a.default=function(){return l.a.createElement(u.a,null,l.a.createElement(r.a,{title:"Home"}),l.a.createElement("h1",null,"List of bhajans"),l.a.createElement("ul",null,l.a.createElement("li",null,l.a.createElement(c.Link,{to:"/hanuman-chalisa/"},"Hanuman Chalisa"))))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-32588ef3c528ad4eb56a.js.map
