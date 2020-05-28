@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import JSONData from "../content/hanumanChalisa.json"
 
-const SecondPage = () => (
+const HanumanChalisaPage = () => (
   <Layout>
 
 <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
@@ -18,4 +18,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default HanumanChalisaPage
