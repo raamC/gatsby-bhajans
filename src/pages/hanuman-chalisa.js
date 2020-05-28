@@ -1,19 +1,11 @@
-// Gatsby supports TypeScript natively!
 import React from "react"
-import { PageProps, Link } from "gatsby"
-
 import Layout from "../components/layout"
-
-
 import JSONData from "../content/hanumanChalisa.json"
 
-const SecondPage = (props: PageProps) => (
+const SecondPage = () => (
   <Layout>
-    
-    <h1>Hanuman Chalisa</h1>
 
-
-    <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
+<div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
   { JSONData.verse1.gujarati }
   </div>
   <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
@@ -21,9 +13,8 @@ const SecondPage = (props: PageProps) => (
   </div>
   <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
   { JSONData.verse1.translation }
+  </div>
 
-</div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
