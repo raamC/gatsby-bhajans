@@ -1,24 +1,9 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: red;
+// If you want to override any standard Bulma styles, 
+// you need to do it before you import Bulma
+
+$primary: #1b1f34;
+$info: #f06723;
 
 @import "~bulma/bulma.sass";
 
-main {
-  font: 100% $font-stack;
-  color: $primary-color;
-}
 
-html, main {
-    height: 100%;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  main {
-    flex: 1 0 auto;
-  }
-  footer {
-    flex-shrink: 0;
-    background-color: royalblue;
-  }
