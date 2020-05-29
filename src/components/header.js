@@ -7,7 +7,7 @@ const Header = () => (
     <div class="navbar-brand">
       <div class="navbar-item">
         <Link to="/">
-          The Bhajan Project
+          The Bhajan Collection
       </Link>
       </div>
 
