@@ -12,36 +12,49 @@ const HanumanChalisaPage = () => {
         <div class="container">
           <div class="columns" style={{ display: 'flex', 'flex-wrap': 'wrap-reverse' }}>
 
-            <div class="column is-two-thirds" style={{'min-width': '60%'}}>
+            <div class="column is-two-thirds" style={{ 'min-width': '60%' }}>
               <div class="notification">
-                <h1 class="title is-1">Hanuman Chalisa</h1>
+                <h1 class="title is-1">{JSONData.title.transliteration}</h1>
+                <h2 class="subtitle is-3">{JSONData.title.gujarati}</h2>
 
-                <div style={showGujarati ? {} : { display: 'none' }} >
-                  {JSONData.verse1.gujarati}
-                </div>
-                <div>
-                  {JSONData.verse1.transliteration}
-                </div>
-                <div style={showTranslation ? {} : { display: 'none' }}>
-                  {JSONData.verse1.translation}
-                </div>
+                
+                {JSONData.sections.map(section => (
+                  <div class="bhajan-section">
+                    <div class="section-gujarati" style={showGujarati ? {} : { display: 'none' }} >
+                      {section.gujarati}
+                    </div>
+                    <div class="section-transliteration">
+                      {section.transliteration}
+                    </div>
+                    <div class="section-translation" style={showTranslation ? {} : { display: 'none' }}>
+                      {section.translation}
+                    </div>
+
+                  </div>
+
+                ))}
+
               </div>
+
+
 
             </div>
             <div class="column is-one-third">
               <div class="notification">
-                    <h3 class="title">Options</h3>
-                    <button class="button" style={{margin: '0 .5rem .5rem 0'}} onClick={() => setShowGujarati(!showGujarati)}>
-                      {showGujarati ? "Hide" : "Show"} Gujarati
+                <h3 class="title">Options</h3>
+                <button class="button options-button" onClick={() => setShowGujarati(!showGujarati)}>
+                  {showGujarati ? "Hide" : "Show"} Gujarati
                     </button>
-                    <button class="button" style={{margin: '0 .5rem .5rem 0'}} onClick={() => setShowTranslation(!showTranslation)}>
-                      {showTranslation ? "Hide" : "Show"} translation
+                <button class="button options-button" onClick={() => setShowTranslation(!showTranslation)}>
+                  {showTranslation ? "Hide" : "Show"} translation
                     </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
 
     </Layout>
   )

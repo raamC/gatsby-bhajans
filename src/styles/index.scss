@@ -5,7 +5,29 @@
 // $info: #f06723;
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500&display=swap');
-
 $family-primary: 'Hind Vadodara', sans-serif;
 
 @import "~bulma/bulma.sass";
+
+
+.options-button {
+    min-width: 145px;
+    margin: 0 .5rem .5rem 0;
+}
+
+.bhajan-section {
+    margin-bottom: 40px;
+}
+
+.section-gujarati {
+    margin-bottom: 5px;
+}
+
+.section-transliteration {
+    color: $cyan;
+    margin-bottom: 5px;
+}
+
+// .section-translation {
+    
+// }
