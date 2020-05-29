@@ -1,7 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
-import StatefulButton from "../components/statefulButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faSave, faExchangeAlt} from '@fortawesome/free-solid-svg-icons'
 
@@ -16,13 +14,11 @@ const IndexPage = () => (
       </div>
     </section>
 
-
     <section class="section">
       <div class="container">
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box">
-
               <h1 class="title has-text-centered is-4">
               <FontAwesomeIcon className=" fa-3x" icon={faCopy}/>
                 </h1>
@@ -51,7 +47,6 @@ const IndexPage = () => (
             <p class="has-text-centered">
                 We want to digitise the bhajans and make sure they are in an accessible format
               </p>
-              
                 </article>
           </div>
         
