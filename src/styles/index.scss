@@ -1,9 +1,11 @@
 // If you want to override any standard Bulma styles, 
 // you need to do it before you import Bulma
 
-$primary: #1b1f34;
-$info: #f06723;
+// $primary: #1b1f34;
+// $info: #f06723;
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500&display=swap');
+
+$family-primary: 'Hind Vadodara', sans-serif;
 
 @import "~bulma/bulma.sass";
-
-
