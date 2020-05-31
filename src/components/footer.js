@@ -5,7 +5,7 @@ const Footer = () => (
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      This is an open source project hosted on <a href="https://github.com/raamC/gatsby-bhajans">Github</a>
+      Made by the Chauhans. For everybody.
     </p>
   </div>
 </footer>
