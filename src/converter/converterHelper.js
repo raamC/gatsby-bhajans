@@ -1,5 +1,3 @@
-const test = '   '
-
 function convertString(string) {
     let convertedString = ""
     for (i = 0; i < string.length; i++) {
@@ -49,14 +47,14 @@ const charMap = {
 
     // x: "\u0A93", // ઓ
     // x: "\u0A94", // ઔ
-    // x: "\u0A95", // ક
+    58133: "\u0A95", // ક
     // x: "\u0A96", // ખ
     // x: "\u0A97", // ગ
     // x: "\u0A98", // ઘ
     // x: "\u0A99", // ઙ
     // x: "\u0A9A", // ચ
     // x: "\u0A9B", // છ
-    // x: "\u0A9C", // જ
+    58140: "\u0A9C", // જ
     // x: "\u0A9D", // ઝ
     // x: "\u0A9E", // ઞ
     // x: "\u0A9F", // ટ
@@ -67,48 +65,48 @@ const charMap = {
     // x: "\u0AA1", // ડ
     // x: "\u0AA2", // ઢ
     // x: "\u0AA3", // ણ
-    // x: "\u0AA4", // ત
-    // x: "\u0AA5", // થ
+    58148: "\u0AA4", // ત
+    58149: "\u0AA5", // થ
     58150: "\u0AA6", // દ
     // x: "\u0AA7", // ધ
-    // x: "\u0AA8", // ન
+    58152: "\u0AA8", // ન
 
     58153: "\u0AAA", // પ
     // x: "\u0AAB", // ફ
     58155: "\u0AAC", // બ
-    // x: "\u0AAD", // ભ
-    // x: "\u0AAE", // મ
+    58156: "\u0AAD", // ભ
+    58157: "\u0AAE", // મ
     58158: "\u0AAF", // ય
 
     // FOURTH ROW
 
-    // x: "\u0AB0", // ર
+    58159: "\u0AB0", // ર
 
     // x: "\u0AB2", // લ
     // x: "\u0AB3", // ળ
 
-    // x: "\u0AB5", // વ
+    58162: "\u0AB5", // વ
     // x: "\u0AB6", // શ
     // x: "\u0AB7", // ષ
     58165: "\u0AB8", // સ
-    // x: "\u0AB9", // હ
+    58166: "\u0AB9", // હ // not sure about this one
 
     // x: "\u0ABC", // ઼
     // x: "\u0ABD", // ઽ
-    // x: "\u0ABE", // ા
+    58169: "\u0ABE", // ા  this is only an approx. 
     // x: "\u0ABF", // િ
 
 
     // FIFTH ROW
 
     // x: "\u0AC0", // ી
-    // x: "\u0AC1", // ુ
+    58172: "\u0AC1", // ુ
     // x: "\u0AC2", // ૂ
     // x: "\u0AC3", // ૃ
     // x: "\u0AC4", // ૄ
     // x: "\u0AC5", // ૅ
 
-    // x: "\u0AC7", // ે
+    58177: "\u0AC7", // ે
     // x: "\u0AC8", // ૈ
     // x: "\u0AC9", // ૉ
 
@@ -131,7 +129,7 @@ const charMap = {
 
     // x: "\u0AE6", // ૦
     // x: "\u0AE7", // ૧
-    // x: "\u0AE8", // ૨
+    58190: "\u0AE8", // ૨
     // x: "\u0AE9", // ૩
     // x: "\u0AEA", // ૪
     // x: "\u0AEB", // ૫
@@ -143,6 +141,12 @@ const charMap = {
     // EIGHTH ROW
 
     // x: "\u0AF1", // ૱ 
+
+    // CUSTOM
+
+    58313: "જી",
+    58241 : "મ્",
+    58288 :"\u0AC7\u0A82"
     
 
 
@@ -151,7 +155,9 @@ const charMap = {
 
 
 }
-
-convertString(test)
-
 // console.log("Conjunct test: \u0AA8\u0ACD\u0A97")
+
+
+convertString('')
+
+console.log(" અૌર હાર")
