@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faSave, faExchangeAlt} from '@fortawesome/free-solid-svg-icons'
+import HowItWorksExample from "../components/howItWorksExample"
 
 const IndexPage = () => (
   <Layout>
@@ -56,7 +57,8 @@ const IndexPage = () => (
 
     <section class="section">
       <div class="container">
-        <h1 class="title">We are working together to collect and translate bhajans for the future generations</h1>
+        <h1 class="title">How it works</h1>
+        <HowItWorksExample />
       </div>
     </section>
 
