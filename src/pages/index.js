@@ -21,7 +21,7 @@ const IndexPage = () => (
           <div class="tile is-parent">
             <article class="tile is-child box">
               <h1 class="title has-text-centered is-4">
-              <FontAwesomeIcon className=" fa-3x" icon={faCopy}/>
+              <FontAwesomeIcon className=" fa-2x" icon={faCopy}/>
                 </h1>
                 <h1 class="title has-text-centered is-4">
                 Collect</h1>
@@ -33,7 +33,7 @@ const IndexPage = () => (
           <div class="tile is-parent">
             <article class="tile is-child box">
             <h1 class="title has-text-centered is-4">
-              <FontAwesomeIcon className=" fa-3x" icon={faExchangeAlt}/>
+              <FontAwesomeIcon className=" fa-2x" icon={faExchangeAlt}/>
                 </h1>
             <h1 class="title has-text-centered is-4">Translate</h1>
             <p class="has-text-centered">We aim to translate the bhajans to share the meanings with future generations</p>
@@ -42,7 +42,7 @@ const IndexPage = () => (
           <div class="tile is-parent">
             <article class="tile is-child box">
             <h1 class="title has-text-centered is-4">
-              <FontAwesomeIcon className=" fa-3x" icon={faSave}/>
+              <FontAwesomeIcon className=" fa-2x" icon={faSave}/>
                 </h1>
             <h1 class="title has-text-centered is-4">Preserve</h1>
             <p class="has-text-centered">
