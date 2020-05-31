@@ -1,26 +1,38 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import "../styles/index.scss"
 
-const Header = () => (
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <div class="navbar-item">
-        <Link to="/">Home</Link>
-      </div>
-    </div>
+const Header = () => {
+  const [burgerIsActive, setBurgerIsActive] = useState(false)
 
-    <div id="navMenu" class="navbar-menu">
-      <div class="navbar-start">
+  return (
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
         <div class="navbar-item">
-          <Link to="bhajans" >Bhajans</Link>
+          <Link to="/">Home</Link>
         </div>
-        <div class="navbar-item">
-          <Link to="mantras" >Mantras</Link>
+        <button onClick={() => setBurgerIsActive(!burgerIsActive)}
+          role="button"
+          class={`navbar-burger burger ${burgerIsActive ? 'is-active' : ''}`}
+          data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="navMenu" class={`navbar-menu ${burgerIsActive ? 'is-active' : ''}`}>
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <Link to="bhajans">Bhajans</Link>
+          </div>
+          <div class="navbar-item">
+            <Link to="mantras">Mantras</Link>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-)
+    </nav>
+  )
+}
 
 export default Header
