@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
-import JSONData from "../content/abaSaumpDiya.json"
+import JSONData from "../content/abaSaumpaDiya.json"
 
-const AbaSaumpDiyaPage = () => {
+const AbaSaumpaDiyaPage = () => {
   const [showGujarati, setShowGujarati] = useState(true)
   const [showTranslation, setShowTranslation] = useState(true)
 
@@ -60,4 +60,4 @@ const AbaSaumpDiyaPage = () => {
   )
 }
 
-export default AbaSaumpDiyaPage
+export default AbaSaumpaDiyaPage
