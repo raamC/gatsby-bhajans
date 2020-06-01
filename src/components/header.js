@@ -11,14 +11,14 @@ const Header = () => {
         <div class="navbar-item">
           <Link to="/">Home</Link>
         </div>
-        <button onClick={() => setBurgerIsActive(!burgerIsActive)}
+        <a onClick={() => setBurgerIsActive(!burgerIsActive)}
           role="button"
           class={`navbar-burger burger ${burgerIsActive ? 'is-active' : ''}`}
           data-target="navMenu" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </button>
+        </a>
       </div>
 
       <div id="navMenu" class={`navbar-menu ${burgerIsActive ? 'is-active' : ''}`}>
