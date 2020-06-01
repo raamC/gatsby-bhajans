@@ -1,12 +1,16 @@
 // If you want to override any standard Bulma styles, 
 // you need to do it before you import Bulma
 
-// $primary: #1b1f34;
-// $info: #f06723;
+// fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500&display=swap');
-$family-primary: 'Hind Vadodara', sans-serif;
+// looks very blocky and the gujarati is hard to read, but it works on mobile
+// @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500&display=swap');
+// $family-primary: 'Hind Vadodara', sans-serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@500&display=swap');
+$family-primary: 'Mukta Vaani', sans-serif;
+
+// looks better, but has problems on mobile
 // @import url('https://fonts.googleapis.com/css2?family=Rasa:wght@500&display=swap');
 // $family-primary: 'Rasa', serif;
 
