@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
 import JSONData from "../content/hanumanChalisa.json"
+import hanuman from "../images/hanuman.jpg"
 
 const HanumanChalisaPage = () => {
   const [showGujarati, setShowGujarati] = useState(true)
@@ -17,7 +18,7 @@ const HanumanChalisaPage = () => {
                 <h1 class="title is-1">{JSONData.title.transliteration}</h1>
                 <h2 class="subtitle is-3">{JSONData.title.gujarati}</h2>
 
-                
+
                 {JSONData.sections.map(section => (
                   <div class="bhajan-section">
                     <div class="section-gujarati" style={showGujarati ? {} : { display: 'none' }} >
@@ -36,8 +37,6 @@ const HanumanChalisaPage = () => {
 
               </div>
 
-
-
             </div>
             <div class="column is-one-third">
               <div class="notification">
@@ -49,6 +48,42 @@ const HanumanChalisaPage = () => {
                   {showTranslation ? "Hide" : "Show"} translation
                     </button>
               </div>
+              <section class="section">
+                <div class="container">
+                  <img src={hanuman} alt="Hanuman" />
+                </div>
+              </section>
+              <section class="section">
+                <div class="container">
+                  <iframe
+                    width="100%"
+                    src="https://www.youtube.com/embed/AETFvQonfV8"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  >
+                  </iframe>
+                </div>
+                <div class="container">
+                  <iframe
+                    width="100%"
+                    src="https://www.youtube.com/embed/9ca5_p87c6o"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  >
+
+                  </iframe>
+                </div>
+                <div class="container">
+                  <iframe
+                    width="100%"
+                    src="https://www.youtube.com/embed/M9Qg_0nFaGc"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  >
+
+                  </iframe>
+                </div>
+              </section>
             </div>
           </div>
         </div>
