@@ -9,7 +9,7 @@ const IndexPage = () => (
     <section class="hero is-medium is-primary">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-1 cursive-heading">Bhavanjali</h1>
+          <h1 class="title is-1 cursive-heading">Prarthanjali</h1>
           <h2 class="subtitle">A shared effort to explain and preserve our bhajans</h2>
         </div>
       </div>
