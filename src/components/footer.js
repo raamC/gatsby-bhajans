@@ -5,7 +5,7 @@ const Footer = () => (
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      Made by the Chauhans. For everybody.
+      Made by the family of Narottambhai and Gangaben Chauhan. For everybody.
     </p>
   </div>
 </footer>
