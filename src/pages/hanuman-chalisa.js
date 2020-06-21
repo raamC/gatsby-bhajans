@@ -51,15 +51,7 @@ const HanumanChalisaPage = () => {
             <div class="box">
               <img src={hanuman} alt="Hanuman" />
             </div>
-            <div class="box notification is-warning">
-              <h3 class="title">Display options</h3>
-              <button class="button options-button" onClick={() => setShowGujarati(!showGujarati)}>
-                {showGujarati ? "Hide" : "Show"} Gujarati
-                    </button>
-              <button class="button options-button" onClick={() => setShowTranslation(!showTranslation)}>
-                {showTranslation ? "Hide" : "Show"} translation
-                    </button>
-            </div>
+            
             <div class="box">
               <h3 class="title">Videos</h3>
               <iframe
@@ -87,6 +79,15 @@ const HanumanChalisaPage = () => {
               </iframe>
 
 
+            </div>
+            <div class="box notification is-warning">
+              <h3 class="title">Display options</h3>
+              <button class="button options-button" onClick={() => setShowGujarati(!showGujarati)}>
+                {showGujarati ? "Hide" : "Show"} Gujarati
+                    </button>
+              <button class="button options-button" onClick={() => setShowTranslation(!showTranslation)}>
+                {showTranslation ? "Hide" : "Show"} translation
+                    </button>
             </div>
           </div>
         </div>
